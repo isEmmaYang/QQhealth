@@ -27,6 +27,7 @@ let barContext = barCanvas.getContext('2d');
 barContext.lineWidth = 20;
 barContext.lineCap = 'round';
 
+//绘制已走步数弧度
 if(finished>0){
 	barContext.beginPath();
 	barContext.arc(width/2, height/2, raduis, finished_arc_start, finished_arc_end, true);
@@ -36,7 +37,7 @@ if(finished>0){
 }
 
 
-
+//绘制未达到10000步数弧度
 if(finished<10000){
 	barContext.beginPath();
 	barContext.arc(width/2, height/2, raduis, unfinished_arc_start, unfinished_arc_end, true);
@@ -45,7 +46,7 @@ if(finished<10000){
 	barContext.closePath();
 }
 
-
+//绘制已走步数和未达到10000步之间的颜色渐变弧度
 if(finished > 0 && finished < 10000){
 	let shadowCanvas = document.querySelector('.top .shadow');
 	shadowCanvas.width = width;
