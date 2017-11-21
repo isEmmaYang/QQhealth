@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, #app{
+    width: 100%;
+    height: 100%;
+    background: lemonchiffon;
+}
+.top{
+	margin:30px auto;
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+.top canvas{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top .info{
+	width: 100%;
+	background: transparent;
+	padding: 20px;
+	box-sizing: border-box;
+	top: 50%;
+	transform: translateY(50%);
+}
+.top .info h3{
+	font-size: 45px;
+	color: #48a7fb;
+	line-height: 70px;
+	text-align: center;
+}
+.top .info p{
+	font-size: 16px;
+	color: #666;
+	line-height: 20px;
+	text-align: center;
+}
+.top .score{
+	color: #48a7fb;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.top .score span{
+	font-size: 24px;
+	padding: 5px 10px;
+}
+.bottom{
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	/*background: red;*/
+	position: relative;
+}
+.bottom .line{
+	width: 100%;
+	height: 0;
+	border-top: 2px dashed #ddd;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bottom p{
+	font-size: 12px;
+	color: #999;
+	line-height: 12px;
+}
+.bottom p.text1{
+	position: absolute;
+	top: -12px;
+	left: 5px;
+}
+.bottom p.text2{
+	position: absolute;
+	top: -12px;
+	right: 5px;
+}
