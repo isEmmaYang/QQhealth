@@ -1,3 +1,5 @@
+alert('aaaaaaaaaaaaaaaa');
+
 import {sevenFinished, finishedColor, unfinishedColor} from './chart.config.js'
 
 let finished = sevenFinished[sevenFinished.length-1].finished;
